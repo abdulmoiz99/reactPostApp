@@ -3,16 +3,13 @@ import './App.css'
 import PostsList from './Pages/PostsList'
 import { NotFound } from './Pages/NotFound'
 import PostDetails from './Pages/PostDetails'
-import EditPost from './Pages/EditPost'
 import Post from './Pages/Post'
+import NavBar from './Components/NavBar'
 
 function App() {
   return (
     <>
-      <nav style={{ margin: 10 }}>
-        <NavLink to="/" style={{ padding: "5px" }}>Home</NavLink>
-        <NavLink to="/post" style={{ padding: "5px" }} end>About</NavLink>
-      </nav>
+      <NavBar />
       <Routes>
         <Route path='/' element={<NotFound />}></Route>
         <Route path={'/post'} element={<Post />}>

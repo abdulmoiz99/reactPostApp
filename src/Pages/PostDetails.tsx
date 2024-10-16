@@ -1,7 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import blogPost from "../Model/blogPost";
-import { Link } from "react-router-dom";
 
 const PostDetails = (props: Props) => {
     const [post, setPost] = useState<blogPost>();
