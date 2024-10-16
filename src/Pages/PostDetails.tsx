@@ -1,12 +1,15 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import blogPost from "../Model/blogPost";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 
-const PostDetails = (props: Props) => {
+const PostDetails = () => {
     const [post, setPost] = useState<blogPost>();
+    const { id } = useParams();
+    const navigate = useNavigate();
     useEffect(() => {
         const getBlogs = () => {
-            axios.get('http://localhost:3000/blogs/1')
+            axios.get(`http://localhost:3000/blogs/${id}`)
                 .then(response => setPost(response.data))
                 .catch(error => console.log(error))
         }
@@ -15,8 +18,9 @@ const PostDetails = (props: Props) => {
 
     return (
         <>
-            <h1>{post?.blogTitle}</h1>
-
+            <h5>Title: {post?.blogTitle}</h5>
+            <h5>Details: {post?.BlogDetails}</h5>
+            <button onClick={() => navigate(`/post/edit/${id}`)} >Edit</button >
         </>
     )
 }

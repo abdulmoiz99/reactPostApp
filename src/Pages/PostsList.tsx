@@ -3,9 +3,7 @@ import { useEffect, useState } from "react"
 import blogPost from "../Model/blogPost";
 import { Link } from "react-router-dom";
 
-type Props = {}
-
-const PostsList = (props: Props) => {
+const PostsList = () => {
     const [post, setPost] = useState<blogPost[]>([]);
     useEffect(() => {
         const getBlogs = () => {
@@ -19,9 +17,9 @@ const PostsList = (props: Props) => {
     return (
         <>
             <ul>
-                {post.map((p, index) => (
-                    <li key={index}>
-                        <Link to={'/post/1'}>
+                {post.map((p) => (
+                    <li key={p.id}>
+                        <Link to={`/post/${p.id}`}>
                             <h3>{p.blogTitle}</h3>
                         </Link>
 

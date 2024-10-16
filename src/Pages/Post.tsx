@@ -1,8 +1,6 @@
 import { Outlet } from 'react-router-dom'
 
-type Props = {}
-
-const Post = (props: Props) => {
+const Post = () => {
     return (
         <>
             <h1>Posts</h1>

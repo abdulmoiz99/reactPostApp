@@ -1,34 +1,34 @@
 {
-    "blogs": [
-        {
-            "blogTitle": "Introduction to Big Data",
-            "BlogDetails": "An overview of big data technologies, their importance, and how they are transforming industries.",
-            "id": 1
-        },
-        {
-            "blogTitle": "Getting Started with Apache Spark",
-            "BlogDetails": "A beginner's guide to setting up Apache Spark for big data processing and running your first Spark job.",
-            "id": 2
-        },
-        {
-            "blogTitle": "Building Data Pipelines with Azure Data Factory",
-            "BlogDetails": "Step-by-step instructions for creating and managing data pipelines using Azure Data Factory.",
-            "id": 3
-        },
-        {
-            "blogTitle": "Mastering Data Lake Storage",
-            "BlogDetails": "A comprehensive guide to utilizing Azure Data Lake Storage for scalable data storage solutions.",
-            "id": 4
-        },
-        {
-            "blogTitle": "Real-Time Analytics with Spark Streaming",
-            "BlogDetails": "An in-depth look at setting up real-time analytics using Apache Spark Streaming.",
-            "id": 5
-        },
-        {
-            "blogTitle": "Visualizing Data with Power BI",
-            "BlogDetails": "Learn how to create interactive dashboards and reports using Power BI for data analysis.",
-            "id": 6
-        }
-    ]
+  "blogs": [
+    {
+      "blogTitle": "Update",
+      "BlogDetails": "123",
+      "id": "1"
+    },
+    {
+      "blogTitle": "Getting Started with Apache Spark",
+      "BlogDetails": "A beginner's guide to setting up Apache Spark for big data processing and running your first Spark job.",
+      "id": "2"
+    },
+    {
+      "blogTitle": "Building Data Pipelines with Azure Data Factory",
+      "BlogDetails": "Step-by-step instructions for creating and managing data pipelines using Azure Data Factory.",
+      "id": "3"
+    },
+    {
+      "blogTitle": "Mastering Data Lake Storage",
+      "BlogDetails": "A comprehensive guide to utilizing Azure Data Lake Storage for scalable data storage solutions.",
+      "id": "4"
+    },
+    {
+      "blogTitle": "Real-Time Analytics with Spark Streaming",
+      "BlogDetails": "An in-depth look at setting up real-time analytics using Apache Spark Streaming.",
+      "id": "5"
+    },
+    {
+      "blogTitle": "Visualizing Data with Power BI",
+      "BlogDetails": "Learn how to create interactive dashboards and reports using Power BI for data analysis.",
+      "id": "6"
+    }
+  ]
 }
